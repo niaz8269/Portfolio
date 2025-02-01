@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js" defer></script> <!-- Added 'defer' to ensure the script loads after the HTML -->
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Niaz Ali
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="Email Icon"/>
+            jdoe@jeemail.com
+          </div>
+          <div style="clear:both;"></div>
+          <div class="contact_info">
+            <img src="html_finalprojimages/phone.png" alt="Phone Icon"/>
+            +13456764598
+          </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/profile.jpg" class="profile_image"/>
+      </div>
+      <div>
+          <h1>
+            Hi, I'm Niaz Ali! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a full stack developer with 2 years of experience in both application and presentation layers.
+            I have worked on applications and websites deployed by CAS and WebTech Technologies. 
+            I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, and Sentiment Analyzer, to name a few.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+        <div class="skill">
+          <img src="html_finalprojimages/react.png"/>
+          <h6>React</h6>
+          <p>2 years experience</p>
+        </div> 
+        <div class="skill">
+          <img src="html_finalprojimages/php.png"/>
+          <h6>PHP</h6>
+          <p>2 years experience</p>
+        </div> 
+        <div class="skill">
+          <img src="html_finalprojimages/python.jpeg"/>
+          <h6>Python</h6>
+          <p>2 years experience</p>
+        </div> 
+        <div class="skill">
+          <img src="html_finalprojimages/c++.png"/>
+          <h6>C++</h6>
+          <p>2 years experience</p>
+        </div> 
+        <div class="skill">
+          <img src="html_finalprojimages/node.png"/>
+          <h6>Node.js</h6>
+          <p>2 years experience</p>
+        </div> 
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div style="clear:both;"></div>
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>Chatbot</h3>
+          <ul>
+            <li>Developed a secure website integrated with a chatbot for an MBBS university client using HTML, CSS, JavaScript, and Python.</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h3>Educational Website</h3>
+          <ul>
+            <li>Developed and deployed a dynamic website for Xinjiang Medical University to handle all student and client needs.</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h3>Educational Website</h3>
+          <ul>
+            <li>Developed and deployed a dynamic website for "The Language Corner" to support student and client needs.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" id="recommend_name" placeholder="Name (Optional)"><br/>
+          <textarea id="new_recommendation" cols="50" rows="5" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you for your recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
